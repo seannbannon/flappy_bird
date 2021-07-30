@@ -14,6 +14,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     let timerId = setInterval(startGame, 20)
 
-    // making our bird jump, 1 hour 28 sex
+    function jump() {
+        birdBottom += 50
+        bird.style.bottom = birdBottom + 'px'
+        console.log(birdBottom)
+    }
+    document.addEventListener('keyup', jump)
 
 })
+
+    // making our bird jump, 1 hour 28 sex
+
+    // https://www.freecodecamp.org/news/javascript-projects-for-beginners/#how-to-create-doodle-jump-and-flappy-bird
