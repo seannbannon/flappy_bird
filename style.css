@@ -43,7 +43,7 @@
 }
 
 .ground{
-    background-color: brown;
+    background-image: url('bottom-background.png');
     width: 500px;
     height: 150px;
     position: absolute;
@@ -52,7 +52,7 @@
 }
 
 .bird{
-    background-color: yellow;
+    background-image: url('flappy-bird.png');
     position: absolute;
     height: 45px;
     width: 60px;
