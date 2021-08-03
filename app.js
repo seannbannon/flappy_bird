@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let birdBottom = 100
     let gravity = 2
     let isGameOver = false
-    let gap = 400
+    let gap = 430
 
     function startGame(){
         birdBottom -= gravity
@@ -51,10 +51,12 @@ document.addEventListener('DOMContentLoaded', () => {
         function moveObstacle(){
             obstacleLeft -=2
             obstacle.style.left = obstacleLeft + 'px'
+            topObstacle.style.left = obstacleLeft + 'px'
 
             if (obstacleLeft === -60){
                 clearInterval(timerId)
                 gameDisplay.removeChild(obstacle)
+                gameDisplay.removeChild(topObstacle)
             }
             if (
                 obstacleLeft > 200 && obstacleLeft < 280 && birdLeft === 220 && birdBottom < obstacleBottom + 153 ||
